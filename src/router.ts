@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { getRepositories } from "./actions/github";
 import { update } from "./actions/update";
 
 const API = "/api/";
@@ -14,8 +15,8 @@ export class Router {
     }
 
     public declare() {
-        this.routes['update'] = (req : Request, res:Response) => {update(req,res)};
-        this.routes['repos'] = (req : Request, res:Response) => {res.send("Repositories here!")};
+        this.routes['update'] = (req : Request, res:Response) => update(req,res);
+        this.routes['repositories'] = (req : Request, res:Response) => getRepositories(req,res);
     }
 
     public getPaths() {
