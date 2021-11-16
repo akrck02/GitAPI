@@ -1,2 +1,0 @@
-web: npm run deploy
-web: npm run start 

@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "tsc",
     "ts": "tsc -w",
-    "start": "node ."
+    "start": "tsc && node ."
   },
   "repository": {
     "type": "git",
