@@ -4,6 +4,7 @@
   "description": "git client cached API for request saving",
   "main": "out/index.js",
   "scripts": {
+    "deploy": "tsc",
     "ts": "tsc -w",
     "start": "node ."
   },
