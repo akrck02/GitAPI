@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { CONFIG, FILES } from "../config/config.js";
-import { getUserRepositories } from "../github/repositories.js";
+import { getUserRepositories } from "../github/api.js";
 
 const fs = require("fs");
 
