@@ -1,7 +1,7 @@
 import express from "express";
 import { API_URL, Router } from "./router";
 
-const PORT = 80;
+const PORT = 3000;
 const app = express();
 const router = new Router();
 router.declare();
