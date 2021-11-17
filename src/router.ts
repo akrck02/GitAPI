@@ -17,6 +17,7 @@ export class Router {
     public declare() {
         this.routes['update'] = (req : Request, res:Response) => update(req,res);
         this.routes['repositories'] = (req : Request, res:Response) => getRepositories(req,res);
+        this.routes['test'] = (req : Request, res:Response) => res.json({message: "Testing from " + req.url});
     }
 
     public getPaths() {
